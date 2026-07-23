@@ -1,8 +1,28 @@
 aid: basalt
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/basalt.png
 name: Basalt
-description: 'Basalt is a company surfaced as a portfolio company of initialized-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Basalt (Basalt Technologies Corp.) is a San Francisco spacecraft-software company building
+  Dispatch, a simulation-based operating system for satellites that makes flight software portable across
+  dissimilar spacecraft hardware — pitched as "Windows for spacecraft" and "Constellations as a Service."
+  Dispatch provides a common control layer so fleets of different satellites can work together on tasking
+  (visible, infrared, and radar imaging), in-orbit networking and telecom, signals intelligence, and
+  monitoring or inspecting other on-orbit assets, including autonomous re-tasking for national security
+  missions. Founded in 2023 by Max Bhatti and Alex Choi (ex-SpaceX engineers, MIT CubeSat program), Basalt
+  is a Y Combinator W24 company that raised a $3.5M seed round led by Initialized Capital in May 2024, with
+  participation from Y Combinator, Liquid 2 Ventures, and General Catalyst. The company publishes no public
+  developer API, documentation, or SDK surface; this profile captures its identity and probed domain
+  security. Sector: frontier-tech / space / defense.'
 url: https://raw.githubusercontent.com/api-evangelist/basalt/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Frontier Tech
+- Space
+- Satellites
+- Spacecraft OS
+- Aerospace
+- Defense
+- National Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/basalt-domain-security.yml
 - type: Website
   url: https://basalt.space/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
